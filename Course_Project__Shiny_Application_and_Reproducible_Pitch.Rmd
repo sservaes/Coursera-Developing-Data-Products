@@ -25,10 +25,9 @@ head(diamonds)
 
 ## Application Overview
 
-- Diamonds Properties can be analysed using several parameters.
+- The price of diamonds can be analysed using several parameters.
 - The most common parameters are carat, cut, color and clarity.
-- This application uses these parameters in order to estimate the price of the diamond.
-
+- Set these parameters in the application in order to estimate the price of the diamond.
 
 ## Application Resources
 
