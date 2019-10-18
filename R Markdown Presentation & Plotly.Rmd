@@ -1,0 +1,25 @@
+---
+title: "R Markdown Presentation & Plotly"
+author: "Stijn Servaes"
+date: "27/06/2019"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(plotly)
+library(ggplot2)
+```
+
+## Assignment
+
+Create a web page presentation using R Markdown that features a plot created with Plotly. Host your webpage on either GitHub Pages, RPubs, or NeoCities. Your webpage must contain the date that you created the document, and it must contain a plot created with Plotly. We would love to see you show off your creativity!
+
+## Plot
+
+```{r plot, echo = TRUE}
+data(iris)
+plot_ly(x= iris$Sepal.Length, y= iris$Sepal.Width, z = iris$Species, 
+type = "scatter3d", mode = "markers", color = iris$Species)
+```
+

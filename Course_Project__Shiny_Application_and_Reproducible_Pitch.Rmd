@@ -1,0 +1,39 @@
+---
+title: 'Course Project: Shiny Application and Reproducible Pitch'
+author: "Stijn Servaes"
+date: "18/10/2019"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Diamond Price Prediction Application
+
+- The Diamond Price Predicition Application Diamond is a product developed using **Shiny** within **RStudio**.
+
+- Using the PageUp and PageDown keys, or the arrow keys, all the slides can be traversed.
+
+## Data Used
+The data used for this application is the diamonds data set, which is part of the ggplot2 package. This dataset contains information about 53940 diamonds with 10 variables.
+
+```{r, echo=TRUE}
+library("ggplot2")
+head(diamonds)
+```
+
+## Application Overview
+
+- Diamonds Properties can be analysed using several parameters.
+- The most common parameters are carat, cut, color and clarity.
+- This application uses these parameters in order to estimate the price of the diamond.
+
+
+## Application Resources
+
+Click the following link to use the application:
+https://sservaes.shinyapps.io/pred_diam/
+
+Click the link below for the compiled project files on GitHub:
+https://github.com/sservaes/Coursera-Developing-Data-Products
